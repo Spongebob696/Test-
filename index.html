@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/fa5d886785.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Abood Logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-caret-down"onclick=openmenu()></i>
+            </nav>
+            <div class="header-text">
+                <p>Learner in big World of <span>Code</span> </p>
+                <h1>Hallo, ich bin <span1>Abood</span1> <br>Und Hier möchte ich euch meine IT-Kenntnisse vorstellen :)</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/my pic ZH .jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                    <p class="P">Beginner In The Big World Of Code
+                        Mein Name ist Abood ich bin 22 Jahre alt. Im Jahr 2018 bin ich mit meiner Familie in
+                        die Schweiz gekommen. Seit ich ein Kind war, habe ich viele verschiedene
+                        Traumberufe gehabt: Pilot, Arzt, Astronaut und so viele andere Berufe! Ich hatte lange
+                        keine Ahnung, was Coding überhaupt ist. Ein von mir hat mich dann für einen online
+                        Coding-Kurs eingeladen. Seitdem beschäftige ich mich mit Codeing und ich habe noch
+                        viel vor! Gerne erzähle ich persönlich noch mehr davon :-)</p>
+                        <a href="Images/Sarraj A. Lebenslauf 01.2023.pdf" download class="btn">Lebenslauf</a>
+            </div>
+        </div>       
+    </div>
+</div>
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-calculator"></i>
+                <H2>Calculator</H2>  
+                <p>The first Project ever that i did, i'm happy with the way it come out :)</p>
+                <a href="https://spongebob696.github.io/Project-Calculator1.1/" target="_blank"> Check it out </a>
+            </div>
+            <div>
+                <i class="fa-regular fa-clock"></i>
+                <H2>Clock</H2>  
+                <p>A simple Clock, here I tried to go with a close Background Them coolers as Calculator</p>
+                <a href="https://spongebob696.github.io/Project-Clock/" target="_blank"> take a look </a>
+            </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title1">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>bdsarraj@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>078 892 56 10</p>
+                <p><i class="fa-solid fa-map-location-dot"></i>Wehntalerstrasse 560, 8046 Zürich</p>
+            </div>
+            <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder=" Name" required>
+                <input type="email" name="email" placeholder=" Email" required>
+                <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn2">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var sidemenu= document.getElementById(sidemenu);
+
+    function openmenu(){
+        sidemenu.style.right = "0px"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200"
+    }
+
+
+</script>
+    
+</body>
+</html>
